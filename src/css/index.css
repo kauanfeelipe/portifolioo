@@ -1,0 +1,471 @@
+/* ==========================================================================
+   1. ESTILOS GLOBAIS
+   ========================================================================== */
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  background: 
+    linear-gradient(rgba(74, 89, 66, 0.85), rgba(74, 89, 66, 0.75)),
+    url('/img/cs-map-bg.jpg');
+  
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; 
+  background-repeat: no-repeat;
+  padding: 40px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+::selection {
+  background-color: var(--secondary-accent);
+  color: white;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 8rem;
+  color: var(--secondary-bg);
+  text-transform: uppercase;
+  margin: -30px 0 5px 0;
+  -webkit-text-stroke: 1px var(--text-3);
+}
+
+
+/* ==========================================================================
+   2. HEADER
+   ========================================================================== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-top: -25px;
+  background-color: var(--bg);
+  padding: 10px 20px;
+  border: 1px solid;
+  border-color: var(--border-light) var(--border-dark) var(--border-dark) var(--border-light);
+}
+
+.header-title {
+  font-weight: bold;
+  color: var(--text);
+  font-size: clamp(1.8rem, 4.5vw, 2.5rem);
+  white-space: nowrap;
+}
+
+.header-menu {
+  display: flex;
+  gap: 40px;
+}
+
+.header-menu a {
+  color: var(--text-3);
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.header-menu a:hover {
+  color: var(--accent);
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.character-icons {
+  display: flex;
+  gap: 59px;
+  margin-bottom: 5px;
+}
+
+.character-icons img {
+  height: 50px;
+  width: auto;
+  filter: brightness(0.9);
+}
+
+
+/* ==========================================================================
+   3. SEÇÃO DE INTRODUÇÃO (Layout Atualizado)
+   ========================================================================== */
+.intro-container {
+  background-color: var(--bg);
+  padding: 20px; 
+  border: 1px solid;
+  border-color: var(--border-light) var(--border-dark) var(--border-dark) var(--border-light);
+}
+
+.intro-section {
+  display: grid;
+  grid-template-columns: auto 1fr; 
+  align-items: start; 
+  gap: 40px;
+  margin: 0;
+}
+
+.intro-left-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.image-frame {
+  background-color: var(--secondary-bg);
+  padding: 5px;
+  border: 1px solid;
+  border-color: var(--border-light) var(--border-dark) var(--border-dark) var(--border-light);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
+
+.image-frame-titlebar {
+  background-color: var(--bg);
+  padding: 3px 8px;
+  margin-bottom: 5px;
+  color: var(--accent);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--border-dark);
+}
+
+.intro-image {
+  width: 280px;
+  height: auto;
+  display: block;
+  border: 1px solid var(--border-dark);
+}
+
+.intro-buttons {
+  margin-top: 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.intro-buttons .cs-btn {
+  font-size: 1.2rem;
+  padding: 10px 20px; 
+}
+
+.intro-text h2 {
+  font-size: 3rem;
+  color: var(--accent);
+  margin-bottom: -25px;
+  margin-top: 0;
+  position: relative;
+  top: -25px;
+  margin-left: -30px; 
+}
+
+.intro-text p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.7rem;
+  line-height: 1.4;
+  color: var(--secondary-text);
+  text-align: justify;
+  margin-left: -30px; 
+}
+
+.intro-text p strong {
+  color: var(--text);
+}
+/* ==========================================================================
+   4. SEÇÃO DE PROJETOS (AJUSTADA)
+   ========================================================================== */
+#projetos {
+  position: relative;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 39px;
+  align-items: start; 
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary-bg);
+  border: 1px solid var(--border-dark);
+}
+
+.project-image {
+  display: block;
+  aspect-ratio: 2 / 1;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border-dark);
+  background-color: var(--border-dark);
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-image:hover img {
+  transform: scale(1.05);
+}
+
+.project-info {
+  padding: 5px; 
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.project-info h3 {
+  font-size: 1.8rem;
+  color: var(--accent);
+}
+
+.project-info p {
+  color: var(--secondary-text);
+  margin: 10px 0; 
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 33px;
+  margin-bottom: 15px; 
+}
+
+.project-tags span {
+  background-color: var(--bg);
+  color: var(--text-3);
+  padding: 4px 25px;
+  font-size: 1rem;
+}
+
+.project-links {
+  display: flex;
+  gap: 208px;
+}
+
+.cs-btn-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+
+.project-carousel-mobile {
+  display: none;
+  padding: 0 10px;
+}
+
+.project-carousel-mobile .swiper {
+  padding-bottom: 40px;
+}
+
+.project-carousel-mobile .swiper-pagination-bullet {
+  background-color: var(--text-3);
+  opacity: 0.7;
+}
+
+.project-carousel-mobile .swiper-pagination-bullet-active {
+  background-color: var(--accent);
+  opacity: 1;
+}
+
+
+/* ==========================================================================
+   5. SEÇÃO DE FORMAÇÃO E HABILIDADES
+   ========================================================================== */
+.formation-section {
+  background-color: var(--secondary-bg);
+  padding: 40px;
+  margin: 50px -40px;
+  border-top: 1px solid var(--border-dark);
+  border-bottom: 1px solid var(--border-dark);
+}
+
+.formation-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.formation-card,
+.skills-card {
+  background-color: var(--bg);
+  border: 1px solid;
+  border-color: var(--border-light) var(--border-dark) var(--border-dark) var(--border-light);
+  padding: 20px;
+}
+
+.formation-card h3,
+.skills-card h3 {
+  font-size: 1.8rem;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.formation-card p {
+  font-size: 1.6rem;
+  color: var(--secondary-text);
+  margin-bottom: 5px;
+}
+
+.formation-card .time {
+  color: var(--text-3);
+  font-size: 1rem;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.hard-skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.skills-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-card li {
+  color: var(--secondary-text);
+  padding: 10px 0;
+  font-size: 1.4rem;
+}
+
+.skill-bar {
+  margin-bottom: 1rem;
+}
+
+.skill-bar label {
+  font-size: 1.6rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--secondary-text);
+}
+
+
+/* ==========================================================================
+   6. FOOTER
+   ========================================================================== */
+footer {
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 40px;
+  color: var(--text-3);
+  border-top: 1px solid var(--border-dark);
+}
+
+
+
+
+/* ==========================================================================
+   7. MEDIA QUERIES (Responsividade)
+   ========================================================================== */
+
+/* Telas Pequenas (celulares) */
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .intro-container {
+    padding: 20px;
+  }
+  
+  .intro-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .intro-left-col {
+    gap: 25px;
+  }
+
+  .intro-text h2 {
+    margin-left: 0; 
+    margin-top: 0;
+    top: -40px; 
+    margin-bottom: -27px;
+    font-size: clamp(2.5rem, 10vw, 2.8rem);
+  }
+
+.intro-text p {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: clamp(1.3rem, 4vw, 1.5rem);
+  text-align: left; 
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+  .intro-buttons {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: clamp(4.8rem, 8vw, 3.5rem);
+    margin-bottom: 20px;
+    margin-top: -20px;
+  }
+  .project-tags{
+    gap: 20px;  
+  }
+  .project-tags span {
+    padding: 4px 10px; 
+    font-size: 1.2rem; 
+  }
+
+  .project-list {
+    display: none;
+  }
+  .project-links {
+    gap: 107px; 
+
+  }
+  .project-carousel-mobile {
+    display: block;
+  }
+
+  .formation-section {
+    margin: 10px -35px;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .hard-skills-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .formation-grid {
+    grid-template-columns: 1fr;
+  }
+}
