@@ -28,8 +28,8 @@ const projectData = [
       description: 'Portfólio desenvolvido com o tema do jogo Counter-Strike 1.6, utilizando React, JavaScript e CSS. O portfólio é responsivo e possui uma navegação intuitiva.',
       tags: ['React', 'JavaScript', 'CSS'],
       img: '/img/prj03.png',
-      repoLink: 'https://github.com/kauanfeelipe/portifolio-react-cs',
-      siteLink: 'https://github.com/kauanfeelipe/portifolio-react-cs'
+      repoLink: 'https://github.com/kauanfeelipe/portifolioo',
+      siteLink: 'https://kauanfeelipe.github.io/portifolioo/'
     },
     {
       title: 'Biblioteca Francesa',
