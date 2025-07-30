@@ -13,7 +13,7 @@ function Intro() {
             <img src={profileImage} alt="Foto de Kauan Felipe" className="intro-image" />
           </div>
           <div className="intro-buttons">
-            <a href="/curri_kauanzera.pdf" target="_blank" rel="noopener noreferrer" className="cs-btn">Currículo</a>
+            <a href="/portifolioo/curri_kauanzera.pdf" target="_blank" rel="noopener noreferrer" className="cs-btn">Currículo</a>
             <a href="https://github.com/kauanfeelipe" target="_blank" rel="noopener noreferrer" className="cs-btn">GitHub</a>
             <a href="https://www.linkedin.com/in/kauanfeelipe/" target="_blank" rel="noopener noreferrer" className="cs-btn">LinkedIn</a>
           </div>
