@@ -20,8 +20,8 @@ function Header() {
 
       <div className="nav-container">
         <div className="character-icons">
-          <img src="portifolioo/img/tr-icon.png" alt="Ícone Terrorista" />
-          <img src="portifolioo/img/ct-icon.png" alt="Ícone Contra-Terrorista" />
+          <img src="/portifolioo/img/tr-icon.png" alt="Ícone Terrorista" />
+          <img src="/portifolioo/img/ct-icon.png" alt="Ícone Contra-Terrorista" />
         </div>
         <nav>
           <ul className="header-menu">
