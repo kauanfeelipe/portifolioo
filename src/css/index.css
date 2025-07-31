@@ -8,7 +8,7 @@ html, body {
 body {
   background: 
     linear-gradient(rgba(74, 89, 66, 0.85), rgba(74, 89, 66, 0.75)),
-    url('/img/cs-map-bg.jpg');
+    url('/portifolioo/img/cs-map-bg.jpg');
   
   background-size: cover;
   background-position: center center;
