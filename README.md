@@ -41,7 +41,7 @@ Para rodar este projeto na sua máquina, siga os passos abaixo:
 
 ```bash
 # 1. Clone o repositório
-git clone [https://github.com/kauanfeelipe/portifolioo.git](https://github.com/kauanfeelipe/portifolioo.git)
+git clone [https://github.com/kauanfeelipe/portifolioo.git]
 
 # 2. Navegue até o diretório do projeto
 cd seu-repositorio
